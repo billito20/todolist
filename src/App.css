@@ -1,0 +1,116 @@
+/* General Layout */
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* App Title */
+.app-title {
+  text-align: center;
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Add Task Form */
+.add-task-form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: #4caf50;
+}
+
+.add-task-button {
+  padding: 12px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-task-button:hover {
+  background: #45a049;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+/* Task Item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.task-checkbox {
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.task-name {
+  flex: 1;
+  font-size: 18px;
+}
+
+.delete-task-button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.delete-task-button:hover {
+  background: #c0392b;
+}
+
+.completed .task-name {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  .task-input {
+    font-size: 14px;
+  }
+}
